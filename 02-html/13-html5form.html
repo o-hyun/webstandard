@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 form</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('input[type=range]').change(function () {
+                $(this).next().text($(this).val() + '개');
+            })
+        });
+    </script>
+</head>
+<body>
+<form action="#" method="post">
+    <fieldset>
+        <legend>html5 form</legend>
+        <p>
+            <label for="username">이름</label>
+            <input type="text" name="username" id="username" value="" placeholder="user name" autofocus required autocomplete="off">
+        </p>
+        <p>
+            <label for="useremail">이메일</label>
+            <input type="email" name="useremail" id="useremail" value="" placeholder="usermail@host.com" required autocomplete="off">
+        </p>
+        <p>
+            <label for="userurl">웹사이트</label>
+            <input type="url" name="userurl" id="userurl" value="">
+        </p>
+        <p>
+            <label for="order">주문수량</label>
+            <input type="number" name="order" id="order" value="5" min="1" max="10"><span>개</span>
+        </p>
+        <p>
+            <label for="userrange">길이</label>
+            <input type="range" name="userrange" id="userrange" value="30" min="0" max="100" step="10"><span></span>
+        </p>
+        <p>
+            <label for="userdate">제출일</label>
+            <input type="date" name="userdate" id="userdate" value="2017-09-12" min="2017-01-01" max="2017-12-31">
+        </p>
+        <p>
+            <label for="usercolor">색상</label>
+            <input type="color" name="usercolor" id="usercolor" value="#3CB543">
+        </p>
+        <p>
+            <label for="usertel">연락처</label>
+            <input type="tel" name="usertel" id="usertel" value="">
+        </p>
+    </fieldset>
+    <input type="submit" value="Send">
+</form>
+</body>
+</html>

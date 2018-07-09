@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('input[type=button]').click(function () {
+                alert('아이디 중복확인 중');
+            })
+        });
+    </script>
+</head>
+<body>
+<form action="#" method="post">
+    <fieldset>
+        <legend>fieldset legend</legend>
+        <p>
+            <label for="name">이름</label> <input type="text" id="name" name="name" value="">
+        </p>
+        <p>
+            <label for="idname">아이디</label> <input type="text" id="idname" name="idname" value="">
+            <input type="button" value="아이디중복확인">
+        </p>
+        <p>
+            <label for="userpass">패스워드</label> <input type="password" id="userpass" name="userpass" value="">
+        </p>
+        <p>
+            <label for="usercomm">의견</label> <textarea name="usercomm" id="usercomm" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="usersel">지역선택</label> 
+            <select name="usersel" id="usersel">
+                <option value="">서울</option>
+                <option value="">부산</option>
+                <option value="">대구</option>
+                <option value="">대전</option>
+                <option value="">울산</option>
+                <option value="">광주</option>
+            </select>
+        </p>
+        <p>
+            <span>성별</span>
+            <label for="male">남자</label><input type="radio" id="male" name="sex" value="male">
+            <label for="female">여자</label><input type="radio" id="female" name="sex" value="female" checked >
+        </p>
+        <!--
+        <p>
+            <span>취미</span>
+            <label for="trip">여행</label><input type="checkbox" id="trip" name="hobby" value="trip">
+            <label for="reading">독서</label><input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="movie">영화감상</label><input type="checkbox" id="movie" name="hobby" value="movie">
+        </p>
+        -->
+        <p>
+            <span>취미</span>
+            <label>여행<input type="checkbox" name="hobby" value="trip"></label>
+            <label>독서<input type="checkbox" name="hobby" value="reading"></label>
+            <label>영화감상<input type="checkbox" name="hobby" value="movie"></label>
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="전송">
+        <button type="submit">전송</button>
+        <input type="reset" value="취소">
+        <button type="reset">취소</button>
+    </p>
+</form>
+</body>
+</html>

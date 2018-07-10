@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css selector</title>
+    <style>
+        body {
+            font-size: 12px;
+        }
+        h1, .lead, #lead {
+            text-decoration: underline;
+        }
+        .lead {
+            color: lightgreen;
+        }
+        #lead {
+            color: lightblue;
+        }
+        #header > p {
+            border: 2px solid red;
+            width: 400px;
+        }
+        #header em {
+            background-color: orange;
+        }
+        #header p + p {
+            background-color: yellow;
+        }
+        .list li + li {
+            background-color: lightblue;
+        }
+        a[title] {
+            background-color: purple;
+            color: white;
+        }
+        a[href^=http] {
+            background-color: black;
+            color: yellow;
+        }
+        a[href$='.pdf'] {
+            background-color: yellow;
+        }
+        li[title*=sam] {
+            background-color: lime;
+        }
+        li[title~=some] {
+            border: 1px dashed;
+            width: 200px;
+        }
+        li[lang|='en'] {
+            border-bottom: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <h1>css <em>selector</em></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, dicta dolore eius eos et, hic
+            id, ipsam iusto nulla placeat quam quis reiciendis repudiandae similique unde? Totam, voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis, dolorum ex hic incidunt iusto,
+            magni nam nihil nisi perferendis perspiciatis porro quae quo, repellendus saepe sequi temporibus totam?
+            Dolores.</p>
+    </div>
+    <div id="content">
+        <p id="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium consectetur culpa cumque, dicta eaque
+            enim, error et eveniet expedita laborum minima nobis praesentium qui quibusdam repellat sint ut veritatis!</p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque modi nesciunt voluptatem. Eos incidunt iusto
+            libero quis reiciendis voluptatem! Ad animi cumque incidunt necessitatibus nesciunt nostrum perspiciatis quo
+            voluptatibus?</p>
+        <p class="lead">Accusantium aut reiciendis reprehenderit vitae. Architecto at facilis iste repudiandae veritatis. Esse molestias,
+            temporibus. Ducimus maiores nisi pariatur quisquam tempora. Accusamus aliquid cupiditate eos iusto, laboriosam minus
+            sed ut velit?</p>
+        <ol class="list">
+            <li style="font-size: 20px;" lang="en">Lorem ipsum dolor sit amet.</li>
+            <li lang="zh">Aperiam expedita iusto rem unde.</li>
+            <li lang="ja">Alias aut facere praesentium quibusdam!</li>
+            <li>Corporis cum error illo pariatur.</li>
+        </ol>
+        <ul>
+            <li><a href="http://daum.net">Daum</a></li>
+            <li><a href="http://naver.com">Naver</a></li>
+            <li><a href="http://google.com">Google</a></li>
+            <li><a href="mailto:help@host" title="help mail">Help</a></li>
+            <li><a href="file/download.pdf">download</a></li>
+            <li title="some text sample">Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto debitis laborum, quia ut veritatis
+            voluptatum. Accusamus aut consequatur dolores eum ex id, ipsam iste laboriosam, numquam quasi tempora ullam!</p>
+    </div>
+</div>
+</body>
+</html>

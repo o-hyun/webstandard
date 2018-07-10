@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css selector2</title>
+    <style>
+        body {
+            color: #333333;
+        }
+        a {
+            color: #888888;
+            text-decoration: none;
+        }
+        /*
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: gray;
+        }
+        */
+        a:hover, a:active, a:focus {
+            color: red;
+            text-decoration: underline;
+        }
+        .lead:first-line {
+            background-color: lime;
+        }
+        .lead:first-letter {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        h1:before {
+            content: 'Before area ';
+            color: blue;
+        }
+        h1:after {
+            content: ' After area';
+            color: red;
+        }
+        div {background-color: lime;}       /* type 1 */
+        .sample {background-color: green;}  /* class 10 */
+        #sample {background-color: purple;} /* id 100 */
+        div#sample.sample {background-color: orange;}   /* sum 111 */
+        div {background-color: cornflowerblue !important;}/*!important, 무조건 적용*/
+    </style>
+</head>
+<body>
+<h1>css selector</h1>
+<p class="lead"><a href="http://naver.com">Naver</a>, consectetur adipisicing elit. Accusantium alias commodi esse id magni nobis quod, velit
+    voluptatum! Accusantium delectus est harum obcaecati officia. Adipisci architecto assumenda, at dolor eos nulla
+    perferendis suscipit ut? A ad debitis ducimus, eveniet impedit iste minus necessitatibus, nihil nulla odit
+    praesentium, tempore temporibus voluptas. A amet at doloremque enim quae quisquam quod similique tempora veniam
+    vitae. Aliquid animi aperiam architecto aspernatur at beatae corporis delectus, dignissimos dolorem dolorum fugit
+    hic impedit in laborum laudantium nam perspiciatis qui sed similique totam! Alias architecto consectetur delectus
+    deleniti, dolor, ducimus eligendi, <a href="#">excepturi quo recusandae reiciendis rem voluptatem.</a></p>
+<hr>
+<div class="sample" id="sample" style="background-color: aquamarine"> <!-- inline style 1000 -->
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci amet aut consequuntur deserunt dicta dolorem
+    error et harum incidunt ipsam itaque magnam maiores minima, quam quidem recusandae, suscipit voluptas.
+</div>
+</body>
+</html>

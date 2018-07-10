@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>font / text</title>
+    <style>
+        /*
+        serif           - 명조
+        sans-serif      - 고딕
+        cursive         - 필기
+        monospace       - 고정폭
+         */
+        body,h1,h2 {
+            /*font-family: '돋움',dotum,Helvetica,sans-serif;*/
+            font-family: 'Malgun Gothic',Helvetica,sans-serif;
+            font-size: 12px;
+        }
+        h1 {
+            font-size: 2.4em;
+            background-color: green;
+            letter-spacing: .1em;
+            text-transform: capitalize;
+            /* uppercase | lowercase | capitalize */
+        }
+
+        h1 small {
+            font-size: .5em;
+            background-color: lime;
+            vertical-align: 6px;
+            /* top | middle | baseline | bottom */
+        }
+        h2 {
+            color: #ff0000;
+            font-size: 2.0em;
+            font-variant: small-caps;
+            text-decoration: line-through;
+            /* underline | overline | line-through | none */
+        }
+        address {
+            font-style: normal;
+            /* normal | italic | oblique (서체의 지원에 따라 기울임정도 결정)*/
+        }
+        .lead {
+            font-size: 1.2em;
+            font-weight: 900;
+            /* bold | bolder | 600 | 700 | 800 | 900 (서체의 지원에 따라 적용여부 결정)*/
+            /* normal | lighter | 100 | 200 | 300 | 400 | 500 */
+            word-spacing: 1em;
+        }
+        .text {
+            line-height: 1.5em;
+            /* left | center | right | justify */
+            text-align: left;
+            text-indent: 1em;
+            /*white-space: nowrap;*/
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1>style example <small>sample</small></h1>
+    <h2>Style Example (font-variant)</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, soluta?</p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis distinctio, fuga, fugit inventore ipsum placeat quasi quia recusandae temporibus, tenetur vel voluptates! A ex perferendis voluptas? Accusantium delectus deserunt ducimus eos fugit hic illo in inventore ipsum laboriosam laudantium magni, nisi odio possimus quaerat qui sint suscipit totam voluptas voluptates. Ipsam iste nulla obcaecati officiis quas quasi quidem saepe sit! Ad adipisci autem blanditiis corporis, dolorem facilis incidunt ipsam itaque laborum magnam nostrum officia quaerat repellendus saepe sequi sint tenetur totam voluptate. Aliquid asperiores blanditiis corporis dignissimos, hic mollitia quibusdam quidem quis suscipit voluptate. Beatae culpa ducimus eaque eos excepturi, id ipsam itaque iure magnam nam officiis placeat praesentium quisquam, rem repudiandae rerum temporibus ullam? Animi consectetur cumque deleniti dicta dignissimos enim, fuga provident quisquam reiciendis, repellendus reprehenderit, repudiandae? Dolor illum odio, rem repellendus tempore veniam voluptate? Alias animi aspernatur autem culpa cupiditate dicta, distinctio ducimus eligendi enim et eveniet ex, facere facilis inventore ipsa itaque iusto labore minima molestias mollitia natus nemo neque odio officia perferendis perspiciatis placeat quidem quis reiciendis rem repellat sed similique totam veniam, voluptas voluptatem voluptatum? Aliquid aspernatur cumque laudantium nulla perspiciatis quidem rerum. Consequuntur dolor explicabo, fuga fugiat ipsum minima ut veritatis voluptatem.</p>
+    <hr>
+    <address>add : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deleniti dolore eos eveniet facere ipsa laborum maiores molestiae officiis porro provident, quia quos reprehenderit saepe, sed sit soluta temporibus voluptatibus?</address>
+</div>
+</body>
+</html>

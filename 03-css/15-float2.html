@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font: 12px/1.6 'Malgun Gothic',sans-serif;
+            /*font: weight style variant *size/line-height *family*/
+        }
+        img {
+            vertical-align: top;    /* 항상 해준다 */
+        }
+        #wrap {
+            width: 800px;
+            margin: 0 auto; /* 컨텐츠를 중앙으로 */
+        }
+        #wrap h1 {
+            padding: 15px 0;
+        }
+        #wrap .thumb {
+            float: left; /* left | reight | none */
+            border: 2px solid black;
+            margin: 10px 0px 15px 0;
+        }
+        #wrap .text {
+            clear: left; /* left | right | both */
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1>float example</h1>
+    <p class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></p>
+    <p class="thumb"><img src="http://placehold.it/100x160?text=2" alt=""></p>
+    <p class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></p>
+    <p class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></p>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque ducimus esse exercitationem facere
+            facilis laborum libero, nihil odio perspiciatis provident quibusdam tempora velit, voluptas voluptate. A ad
+            alias aperiam assumenda consectetur dignissimos, distinctio ducimus est eum eveniet ex ipsa itaque iure mollitia
+            nam non officia, possimus quam quisquam recusandae sequi tempora vitae! Accusamus alias asperiores aut cumque
+            delectus dolorum eveniet excepturi explicabo fugiat hic id illo illum inventore, minus nobis quas sint tempore
+            unde ut voluptatem! Ad adipisci delectus error excepturi fugiat pariatur quia ratione rerum saepe sed,
+            temporibus vel. Alias dolor labore modi voluptates voluptatum. Aperiam, quasi, quidem.</p>
+    </div>
+    </body>
+</div>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>boxmodels</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .box {
+            /*인라인에서는 padding, margin이 잘 안먹는다. 특히 width, height 같은건 아예 안먹음 */
+            /*display: inline;*/    /* padding은 적용되고 margin은 위 아래만 적용 */
+            /*display: inline-block;*/
+            display: block;
+            margin: 20px;
+            /*padding-left: 20px;*/
+            /* top right bottom left */
+            padding: 50px;
+            /*padding: 100px 50px;*//* top bottom | right left *!*/
+            /*padding: 100px 50px 10px;*/   /* top | right left | bottom */
+            /*padding: 100px 50px 10px 0px;*/   /* top | right | bottom | left */
+            /*border-bottom: 2px solid black;*/
+            border-style: dotted;
+            /*
+            border-style : solid | dashed | dotted | double | inset | outset | ridge | groove
+            border-color
+            border-width
+             */
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam asperiores, at cum distinctio enim
+    est eveniet expedita facilis impedit iusto modi molestiae molestias mollitia provident quidem quo rerum vitae.
+</div>
+<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam asperiores, at cum distinctio enim
+    est eveniet expedita facilis impedit iusto modi molestiae molestias mollitia provident quidem quo rerum vitae.
+</div>
+<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam asperiores, at cum distinctio enim
+    est eveniet expedita facilis impedit iusto modi molestiae molestias mollitia provident quidem quo rerum vitae.
+</div>
+<span class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam asperiores, at cum distinctio enim
+    est eveniet expedita facilis impedit iusto modi molestiae molestias mollitia provident quidem quo rerum vitae.
+</span>
+</body>
+</html>

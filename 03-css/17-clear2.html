@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>clear</title>
+    <style>
+        img {
+            vertical-align: top;
+        }
+        .area {
+            width: 800px;
+            overflow: hidden; /* 영역을 벗어나면 숨김 */
+            margin: 0 auto;
+            border: 3px dashed red;
+            *zoom: 1; /* IE6, IE7에서만 통하는 hack */
+        }
+        /*
+        .area:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        */
+        .area .thumb {
+            float: left;
+            border: 2px solid black;
+        }
+
+        .cls {
+            /*clear: left;*/
+        }
+    </style>
+</head>
+<body>
+<div class="area">
+    <div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+    <div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+    <div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+    <div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+    <div class="thumb"><img src="http://placehold.it/100x120?text=5" alt=""></div>
+    <!-- clear 위치 -->
+</div>
+<p class="cls">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cupiditate distinctio doloribus eligendi est eveniet ipsam iste magni maxime, minima mollitia praesentium, quaerat quos rem, sequi temporibus? Dignissimos distinctio dolores enim impedit tempora. Alias asperiores atque expedita quo suscipit. Aut consequuntur cupiditate distinctio doloremque et, inventore iure nobis nostrum quaerat quidem quisquam sunt suscipit ut? Asperiores autem corporis culpa cum dignissimos dolores dolorum ducimus et ex exercitationem explicabo fugiat harum minima molestiae, natus neque nesciunt odit officiis pariatur provident quae quod, ratione reiciendis sapiente similique sit temporibus unde! Asperiores eos et iste laborum magni minus nulla provident quam quod.</p>
+</body>
+</html>

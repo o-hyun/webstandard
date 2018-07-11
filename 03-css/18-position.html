@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+        .box {
+            /* relative(다른 요소들은 그대로 있는 상태에서 얘만 이동) | absolute(절대적인?? 마치없는것처럼) | fixed | static */
+            /*
+            position: relative;
+            left: 100px;
+            top: 100px;
+            */
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: rgba(255,0,0,0.5);
+            font: 12px/1.6 Verdana,sans-serif;
+
+        }
+        .box:first-letter {
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .area {
+            position: relative;
+            width: 800px;
+            margin: 0 auto;
+            border: 2px dashed red;
+        }
+        .a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(255,0,0,.7);}
+        .b {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            background-color: rgba(0,255,0,.7);}
+        .c {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: rgba(0,0,255,.7);}
+    </style>
+</head>
+<body>
+<div class="area">
+    <div class="box a">A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur dolore dolorem eos
+        inventore magni nemo, porro quas quibusdam quod temporibus veniam. A, aperiam dicta excepturi placeat repellat
+        sapiente veritatis?
+    </div>
+    <div class="box b">B Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur dolore dolorem eos
+        inventore magni nemo, porro quas quibusdam quod temporibus veniam. A, aperiam dicta excepturi placeat repellat
+        sapiente veritatis?
+    </div>
+    <div class="box c">C Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur dolore dolorem eos
+        inventore magni nemo, porro quas quibusdam quod temporibus veniam. A, aperiam dicta excepturi placeat repellat
+        sapiente veritatis?
+    </div>
+</div>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi assumenda commodi corporis culpa dolorem dolorum impedit in nam nemo odit perspiciatis quaerat quas qui quia quisquam repellat sapiente sint sunt temporibus unde veritatis, vero voluptate voluptatem voluptatibus? Animi assumenda aut cum debitis deleniti dicta dolore dolorem ducimus, eligendi error eum ex excepturi expedita explicabo facere fuga illum inventore laboriosam libero molestiae necessitatibus nihil nostrum, officia perferendis praesentium provident quis reiciendis reprehenderit repudiandae sunt, suscipit ut vel vero? Amet aperiam debitis exercitationem, fugit illum laborum molestias natus nemo omnis quas, quos, ratione sequi similique sit velit? Alias, aperiam deleniti ea eius enim laboriosam laudantium magnam maxime obcaecati odio similique soluta suscipit voluptatum! Animi aperiam dicta dolores facilis fugiat illum itaque labore laboriosam nam, quod soluta suscipit ullam unde ut veritatis! A culpa facilis minima neque officia perferendis, totam ullam. Adipisci asperiores culpa dolore fugiat hic laborum modi non velit veritatis voluptatem? Ab adipisci animi assumenda blanditiis dicta dolor dolore doloribus eos excepturi molestiae natus, necessitatibus nobis nostrum odit quo repudiandae tempore tenetur ut vel voluptatum! Accusamus ad adipisci aliquam animi at culpa doloribus eaque earum eius eligendi enim explicabo laudantium, natus necessitatibus nemo quasi recusandae repellat repellendus sed similique voluptas!</p>
+</body>
+</html>

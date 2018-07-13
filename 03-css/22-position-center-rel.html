@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>position, center</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* relative 로 중간으로 넣으려면 필요(부모의 크기가 결정되어 있어야 됨) */
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        .content {
+            /* fixed는 도큐먼트 영역이 기준 */
+            /* relative는 감싸는 부모컨테이너가 기준 */
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 800px;
+            height: 400px;
+            margin-left: -400px;
+            margin-top: -200px;
+            background-color: lime;
+        }
+        .content .inn {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="inn">
+        <h1>content title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur corporis cumque debitis dolores
+            et, in, incidunt maxime numquam odit officiis praesentium, quas qui sint soluta veniam vitae! Ab accusantium
+            alias asperiores, aspernatur atque consequuntur culpa debitis delectus distinctio dolor ducimus eos et eveniet
+            exercitationem explicabo facere harum impedit ipsam itaque iusto magnam molestias non nulla numquam odio officia
+            perspiciatis praesentium provident quae quo rem sint suscipit tenetur totam unde ut velit. Ab architecto
+            assumenda consectetur delectus doloremque doloribus enim, eos error fuga fugiat harum inventore minus molestiae
+            neque officia placeat possimus quisquam quos rerum saepe tempore velit voluptates voluptatum!</p>
+    </div>
+</div>
+</body>
+</html>

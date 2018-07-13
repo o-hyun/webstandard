@@ -1,0 +1,79 @@
+<style>
+    /* reset */
+    /*@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');*/
+    html,body {
+        width: 100%;
+        height: 100%;
+    }
+    body,h1,h2,h3,p {
+        padding: 0;
+        margin: 0;
+    }
+    body,h1,h2,h3,input,select,textarea,button,th.td { /* body에 설정된 서체 크기가 폼 컨트롤에는 적용안되는 경우가 있음 */
+        font-family: 'Malgun Gothic',sans-serif;
+        /*font-family:  'Nanum Gothic',sans-serif;*/
+        font-size: 12px;
+    }
+
+    /* style */
+    .section {
+        position: relative;
+        margin: 20px;
+        border: 1px solid #ccc;
+    }
+    .section .hx {
+        border: 1px solid #fff;
+        padding: 8px;
+        color: #555;
+        background-color: #eee;
+        font-size: 1.1em;
+    }
+    .section .tx {
+        border-top: 1px solid #ccc;
+        padding: 8px;
+        color: #555;
+        line-height: 1.5em;
+    }
+    .section .section_more {
+        position: absolute;
+        right: 8px;
+        top: 9px;
+    }
+    .section .section_more  a {
+        position: relative;
+        color: #666;
+        text-decoration: none;
+        letter-spacing: -1px;
+    }
+    .section .section_more a .ico {
+        position: absolute;
+        left: -8px;
+        top: 3px;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border: 10px solid red;
+        border-width: 5px 0 5px 5px;
+        border-color: transparent transparent transparent #aaa;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>box</title>
+</head>
+<body>
+<!-- UI Object -->
+<div class="section">
+    <h2 class="hx">제목</h2>
+    <div class="tx">내용</div>
+    <div class="tx">내용</div>
+    <div class="tx">내용</div>
+    <div class="tx">내용</div>
+    <div class="tx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid architecto aspernatur autem corporis deserunt dicta dolore dolorem ducimus eaque earum eum exercitationem inventore, ipsa iure laborum nemo nisi nobis odio perferendis praesentium provident quas quidem quod reiciendis repudiandae sapiente velit veritatis voluptas, voluptatem? Ad animi, asperiores beatae doloremque earum, expedita incidunt ipsam laboriosam quaerat ratione repellendus, sed ullam vitae voluptas voluptates! Adipisci aliquid aperiam asperiores blanditiis consequuntur dignissimos dolores eos eum expedita explicabo, facilis hic illo impedit laudantium natus necessitatibus non nostrum omnis porro possimus quas quisquam recusandae, repellat reprehenderit, sint sunt temporibus veritatis? Deserunt dignissimos pariatur quam vel?</div>
+    <p class="section_more"><a href="#"><span class="ico"></span> 더보기</a></p>
+</div>
+<!-- //UI Object -->
+</body>
+</html>
